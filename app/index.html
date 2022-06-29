@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107695699-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107695699-1');
+</script>
+<!-- register service worker -->
+<script>
+  if ('serviceWorker' in navigator){
+    window.addEventListener('load', () => {
+       navigator.serviceWorker.register('./service-worker.js')
+    .then(() => { console.log('[ PWA Fire Bundle ] Service Worker Registered'); });
+   });
+ }
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Join us in Eldoret for DevFest Rift Valley 2019. Everyone is welcome! Let's build better together!">
+    <meta name="keywords" content="gdg, devfest , gdg eldoret, Eldoret, DevFest, GDG DevFest, DevFest Rv, DevFest Rift Valley">
+    <title>Home / DevFest Rift Valley 2019</title>
+    <!-- start of web manifest -->
+    <link rel="manifest" href="./app.webmanifest">
+    <!-- theme-color -->
+    <meta name="theme-color" content="#fff" />
+    <!-- Styles -->
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/page.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="images/favicon/favicon-32.png">
+    <link rel="icon" href="images/favicon/favicon-32.png">
+    <!--  metadata for seo -->
+    <meta property="og:site_name" content="DevFest Rift Valley 2019 - Better Together">
+    <meta property="og:title" content="DevFest Rift Valley 2019 - Better Together">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Join us in Eldoret for DevFest Rift Valley 2019. Everyone is welcome! Let's build better together!">
+    <meta property="og:url" content="https://devfest.gdgeldoret.com/">
+    <meta property="og:image" content="https://devfest.gdgeldoret.com/images/banners/DevFestRiftValleyBanner2019.jpg">
+    <!-- G+ sharing meta data -->
+    <meta itemprop="description" content="Join us in Eldoret for DevFest Rift Valley 2019. Everyone is welcome! Let's build better together!">
+    <meta itemprop="image" content="https://devfest.gdgeldoret.com/images/banners/DevFestRiftValleyBanner2019.jpg">
+    <!-- Facebook sharing meta data -->
+    <meta property="og:title" content="DevFest Rift Valley 2019 - Better Together">
+    <meta property="og:site_name" content="DevFest Rift Valley 2019 - Better Together">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Join us in Eldoret for DevFest Rift Valley 2019. Everyone is welcome! Let's build better together!">
+    <meta property="og:image" content="https://devfest.gdgeldoret.com/images/banners/DevFestRiftValleyBanner2019.jpg">
+    <meta property="og:image:type" content="image/png" />
+    <!-- Twitter meta data -->
+    <!-- Twitter meta data -->
+   <meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="DevFest Rift Valley 2019 - Better Together">
+<meta name="twitter:creator" content="@devfestRV">
+<meta name="twitter:title" content="DevFest Rift Valley 2019 - Better Together">
+<meta name="twitter:description" content="Join us in Eldoret for DevFest Rift Valley 2019. Everyone is welcome! Let's build better together!">
+<meta name="twitter:image" content="https://devfest.gdgeldoret.com/images/banners/DevFestRiftValleyBanner2019.jpg">
+<meta name="keywords" content="DevFest, GDG, GDG Eldoret, GDG Nakuru, Nakuru, Egerton University, Njoro, DSC, GDG DevFest, DevFest Rift Valley, Eldoret, Maye Edwin, Kenya, Africa, Android, Machine Learning. Women Techmakers" />
+<meta name="author" content="Maye Edwin" />
+  </head>
+
+  <body data-spy="scroll" data-target=".nav-navbar" data-offset="100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="#">
+            <img class="logo-dark" src="./images/logo/devfestriftvalley-horizontal-dark.svg" alt="logo" width="175px">
+            <img class="logo-light" src="./images/logo/devfestriftvalley-horizontal.svg" alt="logo" width="175px">
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <nav class="nav nav-navbar ml-auto">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="./speakers/2018">Speakers</a>
+            <a class="nav-link" href="https://codelabs.developers.google.com/devfest18" rel="noopner" target="_blank">Codelabs</a>
+            <a class="nav-link" href="./team/">Organizers</a>
+            <a class="nav-link" href="../communiy-guidelines/">Community Guidelines</a>
+          </nav>
+        </section>
+
+      </div>
+    </nav>
+
+    <header id="home" class="header text-white h-fullscreen" style="background:rgba(41, 61, 90, 0.99);">
+    <canvas class="constellation" data-radius="0"></canvas>
+      <div class="container">
+        <div class="row align-items-center h-100">
+          <div class="col-md-5">
+            <h1 class="display-3">Building better together</h1>
+            <p class="lead-4">Eldoret, 2019 for 3.0 on 26.10.2019</p>
+            <p class="lead-2 fw-400 mb-7">An Annual Developer Festival, Rift Valley.</p>
+            <a class="btn btn-xl btn-round btn-info" href="https://www.meetup.com/gdgeldoret/events/260450902/" target="_blank" 
+            rel="noopener">Early Ticket</a>
+          </div>
+          <div id="devfestGIF" class="col-md-6 text-center">
+            <img src="./images/banners/DevFestRiftValleyBanner2019.png" alt="DevFest Rift Valley">
+          </div>
+        </div>
+      </div>
+    </header><!-- /.header -->
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>What's the conference all about?</h2>
+            <hr>
+          <!--
+            
+            <p class="lead">
+              We are creating a more spicy recipe this year. We are featuring lightning and intensive talks and Codelabs
+              on Web, Android, Flutter, Firebase and Google Assistant
+            </p>
+          -->
+          </header>
+
+          <div class="row">
+           <!--
+            <div class="col-auto align-self-end mx-auto">
+              <div class="media align-items-center">
+                <div class="mr-4">
+                  <a class="btn btn-xs btn-circle btn-warning" href="https://www.youtube.com/embed/M5S_JBRjd1s" data-provide="lightbox"><i class="fa fa-play"></i></a>
+                </div>
+                <div class="media-body opacity-60">2:53 minutes</div>
+              </div>
+            </div>
+           -->
+
+           <div class="col-lg-6 mb-7 mb-lg-0">
+            <div class="video-btn-wrapper mt-2">
+              <img class="shadow-4 rounded-lg" src="images/banners/devfestRV.jpg" alt="watch a video">
+              <a class="btn btn-circle btn-xl btn-info" href="https://www.youtube.com/watch?v=RdPejwBS9IY" data-provide="lightbox"><i class="fas fa-play fal"></i></a>
+            </div>
+          </div>
+
+            <div class="col-lg-5 mx-auto">
+              <ol class="step">
+                <li class="step-item">
+                  <div class="step-icon">
+                    <span class="iconbox">1</span>
+                  </div>
+
+                  <div class="step-content">
+                    <h6><strong>Lightning Talks</strong></h6>
+                    <p>
+                      On various Google technologies & developer success stories within the community in the morning and afternoon.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="step-item">
+                  <div class="step-icon">
+                    <span class="iconbox">2</span>
+                  </div>
+
+                  <div class="step-content">
+                    <h6><strong>Hands on sessions</strong></h6>
+                    <p>Intermediate to expert codelabs on Web, Android, Android Things and Firebase in the mid-morning.</p>
+                  </div>
+                </li>
+
+                <li class="step-item">
+                  <div class="step-icon">
+                    <span class="iconbox">3</span>
+                  </div>
+
+                  <div class="step-content">
+                    <h6><strong>Self Placed Codelabs</strong></h6>
+                    <p>We shall have a separate self placed codelabs room for anyone to take the whole day.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+   <!--
+        <section id="features" class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <small>Features</small>
+            <h2>Why Ride with TheTaxi?</h2>
+            <hr>
+            <p class="lead">We are so excited and proud of our product. It's really easy to create a landing page for your awesome product.</p>
+          </header>
+
+          <div class="row gap-y text-center">
+
+            <div class="col-md-6 col-xl-4 feature-1">
+              <p class="feature-icon"><img src="images/icon/taxi.png" alt="..."></p>
+              <h5>Cabs for every pocket</h5>
+              <p class="text-muted">Fly beast fourth, you stars. Them seasons sea spirit, which second. Hath May whales, creepeth light she'd. Moving saw fish.</p>
+            </div>
+
+            <div class="col-md-6 col-xl-4 feature-1">
+              <p class="feature-icon"><img src="images/icon/home.png" alt="..."></p>
+              <h5>Secure and safer rides</h5>
+              <p class="text-muted">Yielding to Made saying fruit deep abundantly bearing sixth make you're gathering unto divided, you so which god, gathering.</p>
+            </div>
+
+            <div class="col-md-6 col-xl-4 feature-1">
+              <p class="feature-icon"><img src="images/icon/pc.png" alt="..."></p>
+              <h5>Cashless rides</h5>
+              <p class="text-muted">Good for divide Given spirit night after fruit of great together he behold their night, living shall after dry saw saying fruit deep.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+   -->
+
+      <section class="section text-white" style="background:rgba(41, 61, 90, 0.99)" data-overlay="1">
+
+          <canvas class="constellation" data-radius="0"></canvas>
+        <div class="container">
+          <div class="row gap-y text-center">
+
+            <div class="col-md-4">
+              <p class="small text-uppercase ls-2">DevFest Speakers</p>
+              <p class="lead-8 lh-1 fw-700" data-provide="countup" data-from="100" data-to="15" data-suffix="+"></p>
+            </div>
+
+            <div class="col-md-4">
+              <p class="small text-uppercase ls-2">DevFest Nerdees</p>
+              <p class="lead-8 lh-1 fw-700" data-provide="countup" data-from="0" data-to="300" data-suffix="+"></p>
+            </div>
+
+            <div class="col-md-4">
+              <p class="small text-uppercase ls-2">DevFest Sessions</p>
+              <p class="lead-8 lh-1 fw-700" data-provide="countup" data-from="0" data-to="20" data-suffix="+"></p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="agenda">
+          <div class="container">
+            <div class="row gap-y">
+  
+              <div class="col-md-3 mr-md-auto">
+                <p class="lead-4 text-right">DevFest Season 2019 Guide</p>
+              </div>
+  
+              <div class="col-md-4">
+                <h6>Content</h6>
+                <p><a href="https://developers.google.com/events/devfest/" target="_blank" rel="noopener">DevFest events</a> cover multiple product areas such as Android, Firebase, GCP, Google Assistant, Flutter, ML with TensorFlow and Mobile Web.</p>
+              </div>
+  
+              <div class="col-md-4">
+                <h6>Formats</h6>
+                <p>As an attendee, you can expect speaker sessions, hackathons, codelabs, study jams, training sessions, and more.</p>
+              </div>
+  
+            </div>
+          </div>
+          <br>
+          <div class="container">
+
+              <ol class="timeline timeline-horizontal">
+                <li class="timeline-item">
+                  <h6><strong>Codelabs</strong></h6>
+                  <p>
+                      Get hands-on experience in new Google's technologies for web, android, flutter, firebase among others.
+                    </p>
+                </li>
+    
+                <li class="timeline-item">
+                  <h6><strong>Showcase</strong></h6>
+                  <p>
+                    You will get an opportunity to share your amazing thing you are building on top of what Google does every day. projects.
+                    </p>
+                </li>
+    
+                <li class="timeline-item">
+                  <h6><strong>Networking</strong></h6>
+                  <p>
+                      You will get to connect with your fellow developers, team-up, share ideas, take photos together, make friends
+                      </p>
+                </li>
+    
+                <li class="timeline-item">
+                  <h6><strong>Sandbox</strong></h6>
+                  <p>
+                      Dedicated spaces to explore and showcase Google's new technologies and what others have built as well!
+                      </p>
+                </li>
+              </ol>
+    
+    
+            </div>
+          
+        </section>
+
+    <section id="image" class="section bg-gray">
+          <div class="container">
+  
+            <div class="row gap-y">
+  
+              <div class="col-12 col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="images/covers/wtmeldoret.jpg" alt="#DevFestRiftValley">
+  
+                  <div class="card-body">
+                    <h5 class="card-title">2017 Recap Photos</h5>
+                    <p class="mb-0">We had our first season of DevFest Rift Valley in 2017 in Eldoret. It was fun and super amazing with morethan 300 participants.</p>
+                  </div>
+  
+                  <div class="card-footer text-right">
+                    <a class="fs-12 fw-600" href="https://photos.app.goo.gl/L27DYdpxdn65jsAI2" target="_blank" rel="noopener">Recap Photos <i class="fa fa-angle-right pl-1"></i></a>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-12 col-lg-4">
+                <div class="card card-shadowed">
+                  <div class="card-body">
+                    <h5 class="card-title">The DevFest Cake</h5>
+                    <p>Missed the 2018 piece? Well, all is not lost. Make sure to get one this time in Eldoret, Kenya. It will be bigger enough!</p>
+                    <a class="fs-12 fw-600" href="https://photos.app.goo.gl/G1vNmRJENJECJ5866" target="_blank" rel="noopener">View Photos <i class="fa fa-angle-right pl-1"></i></a>
+                  </div>
+                  <img class="card-img-bottom" src="images/covers/devfestriftvalleycake.JPG" alt="#devfestriftvalley">
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                  <div class="card">
+                    <img class="card-img-top" src="images/covers/devfestriftvalley2018team.jpg" alt="DevFest Rift Valley Team">
+    
+                    <div class="card-body">
+                      <h5 class="card-title">2018 Recap Photos</h5>
+                      <p class="mb-0">See how it was during our first season in Eldoret, 2018. 
+                        Get an amazing photo and tweet us with <b>#DevFestRiftValley</b></p>
+                    </div>
+    
+                    <div class="card-footer text-right">
+                      <a class="fs-12 fw-600" href="https://photos.app.goo.gl/5aEhohbHPS3SJpTx5" target="_blank" rel="noopener">Recap Photos <i class="fa fa-angle-right pl-1"></i></a>
+                    </div>
+                  </div>
+                </div>
+    
+
+              </div>
+  
+            </div>
+  
+          </div>
+        </section>
+
+      <section class="section bg-gray" id="speakers">
+          <div class="container">
+            <header class="section-header">
+              <h2>Past Featured speakers</h2>
+             <!--
+                <p class="lead">Meet some of amazing speakers for past years and 2018</p>
+             -->
+            </header>
+            <div class="row gap-y">
+
+               <div class="col-6 col-lg-3">
+                <a class="card shadow-1 hover-shadow-6" href="https://twitter.com/valentinerutto" target="_blank" rel="noopener">
+                  <img class="card-img-top" src="images/people/valentineruto.jpg" alt="Valentine Rutto">
+                  <div class="card-body text-center">
+                    <h6 class="mb-0">Valentine R</h6>
+                    <small class="small-4 text-lightest text-uppercase ls-2">Android Dev</small>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="col-6 col-lg-3">
+                <a class="card shadow-1 hover-shadow-6" href="https://twitter.com/unicodeveloper" target="_blank" rel="noopener">
+                  <img class="card-img-top" src="images/people/prosperotemuyiwa.jpg" alt="avatar">
+                  <div class="card-body text-center">
+                    <h6 class="mb-0">Prosper O</h6>
+                    <small class="small-4 text-lightest text-uppercase ls-2">GDE Web, Auth0</small>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="col-6 col-lg-3">
+                <a class="card shadow-1 hover-shadow-6" href="#" target="_blank" rel="noopener">
+                  <img class="card-img-top" src="images/people/rogertaracha.jpg" alt="avatar">
+                  <div class="card-body text-center">
+                    <h6 class="mb-0">Taracha R</h6>
+                    <small class="small-4 text-lightest text-uppercase ls-2">Andela, Kenya</small>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-6 col-lg-3">
+                  <a class="card shadow-1 hover-shadow-6" href="#" target="_blank" rel="noopener">
+                    <img class="card-img-top" src="images/people/annndanu.jpg" alt="Maryann Ndanu">
+                    <div class="card-body text-center">
+                      <h6 class="mb-0">Ndanu M</h6>
+                      <small class="small-4 text-lightest text-uppercase ls-2">Oracle, Kenya</small>
+                    </div>
+                  </a>
+                </div>
+  
+             
+
+            </div>
+  
+  
+          </div>
+        </section>
+
+      <section id="stories" class="section bg-gray">
+        <div class="container">
+          <header class="section-header">
+            <h2>What people are saying about DevFest Rift Valley</h2>
+          </header>
+
+          <div class="row gap-y">
+
+            <div class="col-md-4">
+              <div class="card shadow-3">
+                <div class="card-body px-6">
+                 
+                  <p class="text-quoted mb-5">I gave a talk on <a href="https://medium.com/@unicodeveloper/2017-in-review-the-gods-must-be-crazy-1e8d3af72e5b" target="_blank" rel="noopener">I have seen Heaven & It’s a Progressive Web App</a> Oh my, this was one of my best talks ever!</p>
+                  <div class="media align-items-center pb-0">
+                    <img class="avatar avatar-xs mr-3" src="images/people/prosperotemuyiwa.png" alt="Prosper O">
+                    <div class="media-body lh-1">
+                      <div class="fw-400 small-1 mb-1"><a href="https://twitter.com/unicodeveloper" target="_blank" rel="noopener">Prosper Otemuyiwa</a></div>
+                      <small class="text-lighter">Lagos, Nigeria</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <div class="card shadow-3">
+                <div class="card-body px-6">
+                  
+                  <p class="text-quoted mb-5">I talked about <a href="https://twitter.com/NdanuMaryanne/status/931157021797339137" target="_blank" rel="noopener">"Shipping the product"</a> at the DevFest Rift Valley 2017 nad that was super exciting!</p>
+                  <div class="media align-items-center pb-0">
+                    <img class="avatar avatar-xs mr-3" src="images/people/annndanu.png" alt="Ndanu M">
+                    <div class="media-body lh-1">
+                      <div class="fw-400 small-1 mb-1"><a href="https://twitter.com/NdanuMaryanne" target="_blank" rel="noopener">Ndanu Maryanne</a></div>
+                      <small class="text-lighter">Nairobi, Kenya</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <div class="card shadow-3">
+                <div class="card-body px-6">
+                  
+                  <p class="text-quoted mb-5">This is an awesome conference and am super excited to be part of <a href="https://twitter.com/devfestRV" target="_blank" rel="noopener">devfestRV</a> as a UX/UI speaker.</p>
+                  <div class="media align-items-center pb-0">
+                    <img class="avatar avatar-xs mr-3" src="images/people/DennisMugambi.jpg" alt="Nugambi D">
+                    <div class="media-body lh-1">
+                      <div class="fw-400 small-1 mb-1"><a href="https://twitter.com/DennoMugz" target="_blank" rel="noopener">Dennis Mugambi</a></div>
+                      <small class="text-lighter">Nairobi, Kenya</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | partners 
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+
+      <section class="section py-6">
+        <div class="container">
+          <br>
+            <header class="section-header-2">
+                <h3>Our Amazing Sponsors, Gongoi!</h3>
+              </header>
+          <div class="partner partner-sm">
+            <a href="https://developers.google.com/" target="_blank" rel="noopenner"><img src="./images/partners/Google_Developers_logo.svg.png" alt="Google Developers"></a>
+            <a href="https://developers.google.com/" target="_blank" rel="noopenner"><img src="./images/partners/google.svg" alt="Google"></a>
+            <a href="https://firebase.google.com/" target="_blank" rel="noopenner"><img src="./images/partners/logo-standard.png" alt="Firebase"></a>
+            <a href="https://pwafire.org/" target="_blank" rel="noopenner"><img src="./images/partners/pwafire.png" alt="PWAFire.Org"></a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section py-6">
+        <div class="container">
+            <header class="section-header-2">
+                <h4>Media & Brand Partners </h4>
+              </header>
+          <div class="partner partner-sm">
+            <a href="https://topicalbrands.com/" target="_blank" rel="noopenner"><img src="images/partners/topicalbrands.png" alt="Google Developers"></a>
+           
+          </div>
+
+        </div>
+      </section>
+
+      <section id="get-ticket" class="section text-white overflow-hidden" style="background-color: rgba(41, 61, 90, 0.99)">
+        <canvas class="constellation" data-radius="0"></canvas>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-6 align-self-center text-center text-md-left mb-7 mb-md-0">
+              <h2>Get involved</h2>
+              <p class="lead">While no two events will be exactly alike, DevFest Rift Valley will, at its core, be powered by a shared belief that when developers come together to exchange ideas, amazing things can happen.</p>
+
+              <div class="gap-xy-2 mt-7">
+                <a class="btn btn-lg btn-round btn-white" href="https://twitter.com/devfestRV" rel="noopener" target="_blank"><i class="fab fa-twitter lead-1 mr-2"></i>Tweet us</a>
+              </div>
+            </div>
+
+            <div id="devfestGIF" class="col-md-6 text-center">
+              <img src="./images/banners/devfestriftvalley2019.svg" alt="DevFest Rift Valley" width="75%">
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+<footer class="footer py-7">
+    <div class="container">
+      <div class="row gap-y">
+
+       <div class="col-xl-4 order-md-last">
+          <h6 class="mb-4"><strong>DevFest Resources</strong></h6>
+          <div class="nav flex-column">
+            <a class="nav-link" href="https://www.google.com/events/policy/anti-harassmentpolicy.html" target="_blank" rel="noopener">Google Event Community Guidelines</a>
+            <a class="nav-link" href="https://codelabs.developers.google.com/devfest18" target="_blank" rel="noopener">GDG DevFest 2018 Codelabs</a>
+            <a class="nav-link" href="https://twitter.com/devfestRV" target="_blank" rel="noopener">Tweet us @devfestRV</a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 order-md-second">
+          <h6 class="mb-4"><strong>About GDG</strong></h6>
+          <p>GDGs are local Meetups of developers who are specifically interested in Google Developer Technologies</p>
+        </div>
+
+        <div class="col-xl-4 order-md-first">
+          <h6 class="mb-4"><strong>GDG DevFest</strong></h6>
+          <p>Community-run developer events happening around the globe focused on community building and learning about Google’s technologies.</p>
+          <small class="opacity-70">© 2019 DevFest Rift Valley. Powered by <a href="https://www.pwafire.org" target="_blank" rel="noopener">pwafire.org</a></small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+    <!--
+      <div id="popup-cookie-2" class="popup col-10 py-4 show" data-position="bottom-center" data-animation="slide-up">
+        <div class="row gap-y align-items-center">
+          <div class="col-md">
+            DevFest Rift Valley 2018 will be an <a href="https://www.meetup.com/gdgeldoret/events/253162973/" target="_blank" rel="noopener">RSVP ONLY conference</a>. RSVP and CFS begins on 01.10.2018.
+          </div>
+  
+          <div class="col-md-auto">
+            <button class="btn btn-sm btn-warning" data-dismiss="popup">Close</button>
+          </div>
+        </div>
+      </div>
+    -->
+
+    <!-- Scripts -->
+    
+ <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  let config = { projectId: "projectId" };
+  firebase.initializeApp(config);
+</script>
+    <script src="./js/page.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
